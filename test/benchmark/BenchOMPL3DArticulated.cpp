@@ -7,6 +7,7 @@
 namespace ho = hrm::planners::ompl_interface;
 
 int main(int argc, char** argv) {
+    std::cout << argc;
     if (argc == 8) {
         std::cout << "OMPL for 3D articulated-body planning" << std::endl;
         std::cout << "----------" << std::endl;
@@ -18,7 +19,7 @@ int main(int argc, char** argv) {
                "Sampler end ID 8) Max planning time (in seconds)"
             << std::endl;
         return 1;
-    }
+
 
     // Record planning time for N trials
     const std::string mapType = argv[1];
